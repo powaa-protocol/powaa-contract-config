@@ -1,0 +1,31 @@
+{
+  "Tokens": {
+    "USDC": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "POWAA": "0x95Cb0BAB53F4021467528Fe2A7D2f4fD597711CE"
+  },
+  "ThirdParty": {
+     "UniswapV2": {
+       "LP": {
+         "POWAA-ETH": "0x184B898244AaBca327d6b5bCed4E398F232a8bb1"
+       }
+     }
+  },
+  "FeeModel": "0xF1B078997De6BbA43229D172B845E61CB715D3Bd",
+  "GovLPVault": "0x6BFc240760Bcb1875494C30C279d1Aaa83DC7157",
+  "TokenVault": {
+    "USDC": "0xFF2eDc86e29dc19c9157d18170AEafA5BA02E733"
+  },
+  "Multicall": "0x5e227AD1969Ea493B43F840cfF78d08a6fc17796",
+  "Migrator": {
+    "TokenVault": {
+      "SingleToken": {
+        "Self": "0x638cCD0D885d1A62058D39F729de899ac42CD55C",
+        "Reserve": "0x0dd1887d54715c8BA24E16AbfE05D4888aE48418"
+      }
+    },
+    "GovLPVault": {
+      "Self": "0xc1452B3C77400f95aa1047A8C5F01758D8BE11B0",
+      "Reserve": "0x9D3a3624AB929A9c2de6aC7449163Ac086487F8E"
+    }
+  }
+}
