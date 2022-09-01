@@ -1,21 +1,77 @@
 {
   "Tokens": {
-    "USDC": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "DAI": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
     "POWAA": "0x95Cb0BAB53F4021467528Fe2A7D2f4fD597711CE",
-    "WETH": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
-  },
-  "ThirdParty": {
-     "UniswapV2": {
-       "LP": {
-         "POWAA-ETH": "0x184B898244AaBca327d6b5bCed4E398F232a8bb1"
-       }
-     }
+    "STETH": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84",
+    "USDC": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "USDT": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "WBTC": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+    "WETH": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "CURVE_ETH": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
   },
   "FeeModel": "0xF1B078997De6BbA43229D172B845E61CB715D3Bd",
-  "GovLPVault": "0x6BFc240760Bcb1875494C30C279d1Aaa83DC7157",
-  "TokenVault": {
-    "USDC": "0xFF2eDc86e29dc19c9157d18170AEafA5BA02E733"
+  "GovLPVault": {
+    "Name": "POWAA-ETH LP",
+    "Symbol": "POWAA-ETH",
+    "VaultAddress": "0x35Ad42F5204Ff542863e37975F61Efe57539F9bF",
+    "TokenAddress": "0x3697c1c9966cDc0b32583698eAb75a6Fc6548d3D",
+    "Source": "Sushi",
+    "BaseAssets": ["WETH", "POWAA"]
   },
+  "TokenVault": [
+    {
+      "Name": "USDC Token",
+      "Symbol": "USDC",
+      "VaultAddress": "0xFF2eDc86e29dc19c9157d18170AEafA5BA02E733",
+      "TokenAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "Source": "Sushi",
+      "BaseAssets": ["USDC"]
+    },
+    {
+      "Name": "WBTC Token",
+      "Symbol": "WBTC",
+      "VaultAddress": "0x52AaAb9a0Dd37A1964E2a640A58E0DE1E3df0BC7",
+      "TokenAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "Source": "Sushi",
+      "BaseAssets": ["WBTC"]
+    },
+    {
+      "Name": "USDC-ETH LP",
+      "Symbol": "USDC-ETH",
+      "VaultAddress": "0xAE89E24c6183507c341Eb477Eb4Fe6e86Ff2d914",
+      "TokenAddress": "0x397FF1542f962076d0BFE58eA045FfA2d347ACa0",
+      "Source": "Sushi",
+      "BaseAssets": ["USDC", "WETH"]
+    },
+    {
+      "Name": "DAI-USDC-USDT LP",
+      "Symbol": "DAI-USDC-USDT",
+      "VaultAddress": "0x78d8B0cb53343fD57e58D378319e048fb8a4A4BF",
+      "TokenAddress": "0x6c3F90f043a72FA612cbac8115EE7e52BDe6E490",
+      "Source": "Curve",
+      "BaseAssets": ["DAI", "USDC", "USDT"],
+      "StableSwapAddress": "0xbEbc44782C7dB0a1A60Cb6fe97d0b483032FF1C7"
+    },
+    {
+      "Name": "USDT-ETH LP",
+      "Symbol": "USDT-ETH",
+      "VaultAddress": "0x768eaA5bEDEe45ec30a0aF277D597955096eF8e5",
+      "TokenAddress": "0x06da0fd433C1A5d7a4faa01111c044910A184553",
+      "Source": "Sushi",
+      "BaseAssets": ["USDT", "WETH"]
+    },
+    {
+      "Name": "ETH-stETH LP",
+      "Symbol": "ETH-stETH",
+      "VaultAddress": "0xE894aa6cb4D597A100e37e5E7CD728302BF27CeD",
+      "TokenAddress": "0x06325440D014e39736583c165C2963BA99fAf14E",
+      "Source": "Curve",
+      "BaseAssets": ["CURVE_ETH", "STETH"],
+      "StableSwapAddress": "0xDC24316b9AE028F1497c275EB9192a3Ea0f67022"
+    }
+  ],
+  "UniSwapV2Router": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+  "SushiSwapRouter": "0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F",
   "Multicall": "0x5e227AD1969Ea493B43F840cfF78d08a6fc17796",
   "Migrator": {
     "TokenVault": {
