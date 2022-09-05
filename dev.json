@@ -82,7 +82,7 @@
     },
     {
       "Name": "Curve tricrypto2 LP",
-      "Symbol": "USD-BTC-ETH",
+      "Symbol": "USDT-BTC-ETH",
       "VaultAddress": "0xCA1C9e57C5fa26A0818383C8BCe136e6b14a3f16",
       "TokenAddress": "0xc4AD29ba4B3c580e6D59105FFf484999997675Ff",
       "Source": "Curve",
